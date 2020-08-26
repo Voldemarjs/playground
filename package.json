@@ -4,22 +4,23 @@
   "description": "The platform for browser games",
   "main": "main.js",
   "scripts": {
-    "test": "node main.js"
+    "test": "node main.js",
+    "server": "nodemon main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kocetora/playground.git"
+    "url": "git+https://github.com/v0ldemar01/playground.git"
   },
   "keywords": [
     "tictactoe"
   ],
-  "author": "kocetora <kocetora@gmail.com>",
+  "author": "v0ldemar01 <voldemarprk2001@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kocetora/playground/issues"
-  },
-  "homepage": "https://github.com/kocetora/playground#readme",
+  "homepage": "https://github.com/v0ldemar01/playground#readme",
   "dependencies": {
     "websocket": "^1.0.28"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }

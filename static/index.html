@@ -1,32 +1,18 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1 id="chat">Chat</h1>
-<h1 id="tictac">TicTac</h1>
-<div id="links"></div>
-<style>
-input { border: 1px solid green; }
-</style>
-<script>
-  function buttonFor(name,request,element,targetID){
-    const target = document.getElementById(targetID);
-    element.addEventListener('click',async () => {
-      const json = await fetch(`./create/${request}/`);
-      const data = await json.json();
-      const link = document.createElement('a')
-      link.href = `./room/${data.token}/`
-      link.innerHTML = `<p>${name}: ${data.token}</p>`;
-      target.appendChild(link)
-    });
-  }
-  async function main() {
-  const links = document.getElementById('links');
-  const chat = document.getElementById('chat');
-  buttonFor('Chat','chat',chat,'links');
-  const tictac = document.getElementById('tictac');
-  buttonFor('TicTac','tictac',tictac,'links');
-}
-main();
-</script>
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>  
+    <link rel="stylesheet" href="css/button.css"> 
+  </head>
+  <body>     
+    <div id="img" class="container">
+      <img  src="img/img.jpg" alt="T" width="100%">
+    </div>
+    
+    <script type="text/javascript" src="js/script.js" ></script>
+
+  </body>
+  
+</html>   
